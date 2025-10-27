@@ -36,27 +36,27 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 128, 0.3);
 }
 #start{
-    background-image: url(/one.png);
+    background-image: url(/pictures/one.png);
     background-size: cover;
     background-position: center;
 }
 #no1{
-    background-image: url(/two.png);
+    background-image: url(pictures/two.png);
     background-size: cover;
     background-position: center;
 }
 #no2{
-    background-image: url(/three.png);
+    background-image: url(pictures/three.png);
     background-size: cover;
     background-position: center;
 }
 #no3{
-    background-image: url(/four.png);
+    background-image: url(pictures/four.png);
     background-size: cover;
     background-position: center;
 }
 #yesimg{
-    background-image: url(/five.png);
+    background-image: url(pictures/five.png);
     background-size: cover;
     background-position: center;
 }
