@@ -1,0 +1,202 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    color: #fff;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4); 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.img {
+    background-color: #ffffff20; 
+    width: 20vw;
+    height: 30vh;
+    border: 3px solid #4caf50;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 255, 128, 0.3);
+}
+#start{
+    background-image: url(/one.png);
+    background-size: cover;
+    background-position: center;
+}
+#no1{
+    background-image: url(/two.png);
+    background-size: cover;
+    background-position: center;
+}
+#no2{
+    background-image: url(/three.png);
+    background-size: cover;
+    background-position: center;
+}
+#no3{
+    background-image: url(/four.png);
+    background-size: cover;
+    background-position: center;
+}
+#yesimg{
+    background-image: url(/five.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.yesno {
+    width: 20vw;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.yes, .no {
+    width: 80px;
+    height: 45px;
+    background-color: #017caf;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.yes:hover {
+    background-color: #00b0ff;
+    transform: translateY(-5px);
+}
+
+.no:hover {
+    background-color: #ff1744;
+    transform: translateY(-5px);
+}
+
+
+.p {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 50%;
+    right: 50%;
+    animation: fly 2s ease-out forwards;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}
+
+.particles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.blue { background-color: #2196f3; }
+.red { background-color: #f44336; }
+.green { background-color: #4caf50; }
+
+
+#move {
+    position: relative;
+    z-index: 4;
+    transition: all 0.5s ease;
+    
+}
+
+
+h1 ,h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+
+    text-shadow: 0 0 10px rgba(0,255,128,0.5);
+}
+h3{
+    font-size: 1.3rem;
+}
+
+/* ===== Responsive for phones ===== */
+@media only screen and (max-width: 768px) {
+    .img {
+        width: 40vw;          /* wider on small screens */
+        height: 25vh;         /* slightly shorter */
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 255, 128, 0.3);
+    }
+
+    .yesno {
+        width: 80vw;          /* buttons spread out */
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .yes, .no {
+        width: 60px;          /* smaller buttons */
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;    /* smaller heading */
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .particles {
+        width: 80px;
+        height: 80px;
+    }
+
+   
+}
+
+/* Optional: for very small screens (<480px) */
+@media only screen and (max-width: 480px) {
+    .yes, .no {
+        width: 60px;
+        height: 45px;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .img {
+        height: 20vh;
+        width: 200px;
+    }
+
+    
+}
