@@ -46,7 +46,7 @@ It includes colorful particle animations, hover/click effects, and a beautiful g
 **Pranay Waghmare**  
 📍 Frontend Developer in progress 🚀  
 🔗 [GitHub Profile](https://github.com/PranayWaghmare6)  
-💼 [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile)
+💼 [LinkedIn](https://www.linkedin.com/in/pranay-waghmare-72397137b/)
 
 ---
 
